@@ -5,7 +5,7 @@
     <groupId>mywork</groupId>
     <artifactId>mywork</artifactId>
     <version>1.0</version>
-    <packaging>java</packaging>
+    <packaging>jar</packaging>
 
     <build>
         <pluginManagement>
@@ -32,9 +32,18 @@
                     </executions>
                 </plugin>
             </plugins>
-
         </pluginManagement>
-
     </build>
-
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.16</version>
+                <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
