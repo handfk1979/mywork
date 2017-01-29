@@ -10,6 +10,6 @@ public class mywork {
     }
 
     public static void main(String args[]){
-        new mywork("steven");
+        mywork m = new mywork("steven");
     }
 }
